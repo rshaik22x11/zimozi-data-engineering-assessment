@@ -1,0 +1,32 @@
++-----------------------+
+| Local SQLite Database |
++-----------------------+
+           |
+           | Backup Script
+           v
++-----------------------+
+| Compressed Backup     |
++-----------------------+
+           |
+           | AWS CLI Upload
+           v
++-----------------------+
+| Amazon S3 (Backups)   |
+| backups/postgres/...  |
++-----------------------+
+
++-----------------------+
+| Local CSV Dataset     |
++-----------------------+
+           |
+           v
++-----------------------+
+| Amazon S3 Data Lake   |
+| datalake/orders/...   |
++-----------------------+
+           |
+           v
++-----------------------+
+| Amazon Athena         |
+| SQL Analytics Query   |
++-----------------------+
